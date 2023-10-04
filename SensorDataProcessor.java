@@ -19,7 +19,7 @@ public class SensorDataProcessor {
     /**
      * Constructor for SensorDataProcessor.
      *
-     * @param data  Sensor data array.
+     * @param data  Sensor data array
      * @param limit Limit array.
      */
     public SensorDataProcessor(double[][][] data, double[][] limit) {
