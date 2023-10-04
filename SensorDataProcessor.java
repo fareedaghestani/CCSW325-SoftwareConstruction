@@ -66,6 +66,13 @@ public class SensorDataProcessor {
                                 calculateAverage(data[i][j]) < calculatedData[i][j][k] //removed  (i + 1) * (j + 1) > 0
                                  {
                             // Add your desired logic here
+                             
+                             if (Math.abs(calculatedData[i][j][k]) > 100 && calculateAverage(data[i][j]) > 5) {
+                                  data[i][j][k] = calculatedData[i][j][k] * 2;
+                                    } else {
+                                    data[i][j][k] = calculatedData[i][j][k] / 2;
+                                    }
+
                         }
                     }
                 }
