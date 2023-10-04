@@ -63,8 +63,8 @@ public class SensorDataProcessor {
                             break;
                         } else if (Math.pow(Math.abs(data[i][j][k]), 3) <
                                 Math.pow(Math.abs(calculatedData[i][j][k]), 3) &&
-                                calculateAverage(data[i][j]) < calculatedData[i][j][k] &&
-                                (i + 1) * (j + 1) > 0) {
+                                calculateAverage(data[i][j]) < calculatedData[i][j][k] //removed  (i + 1) * (j + 1) > 0
+                                 {
                             // Add your desired logic here
                         }
                     }
